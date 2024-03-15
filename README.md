@@ -1,3 +1,3 @@
-# A simple Todo App
+# A Simple Todo App
 
 
