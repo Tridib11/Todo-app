@@ -4,7 +4,7 @@ export default function App() {
 
 
   const [newItem, setNewItem] = useState("");
-  
+
   const [todos, setTodos] = useState(()=>{
     const localValue=localStorage.getItem("ITEMS")
     if(localValue==null) return []
@@ -18,6 +18,7 @@ export default function App() {
 
   function handleSubmit(e) {
     e.preventDefault(); //stops the page from refresing
+    
     // Check if newItem is empty or only contains spaces
     if (!newItem.trim()) {
       alert("Please add a title 😉");
